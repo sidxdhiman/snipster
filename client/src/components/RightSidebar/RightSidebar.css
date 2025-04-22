@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap');
+
+.right-sidebar {
+  position: fixed;
+  top: 62px;
+  right: 0;
+  width: 300px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  background: linear-gradient(135deg, #0b0018, #1f003c 80%);
+  border-left: 2px solid #ff00ff;
+  box-shadow: -8px 0 40px rgba(255, 0, 255, 0.6), -12px 0 60px rgba(0, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  color: #00ffe0;
+  /* z-index: 1000; */
+  padding: 14px;
+  transition: all 0.4s ease-in-out;
+  animation: neonFadeIn 0.8s ease-out;
+  margin-top: 0;
+}
+
+@keyframes neonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Widget Box */
+.widget {
+  margin: 25px 0;
+  border: 1px solid #a000ff;
+  border-radius: 14px;
+  background: rgba(45, 0, 80, 0.95);
+  box-shadow: 0 0 20px #ff00ff55, 0 0 30px #00ffff44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.widget:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px #ff00ff88, 0 0 50px #00ffff66;
+}
+
+.widget h4 {
+  background: linear-gradient(to right, #ff00cc, #4400ff);
+  color: #ffffff;
+  padding: 16px 18px;
+  font-size: 14px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ff00ffaa;
+  text-shadow: 0 0 4px #ff00ff, 0 0 2px #00ffff;
+}
+
+/* Inner Content */
+.right-sidebar-div-1 {
+  padding: 18px;
+  border-top: 1px solid #ff00ff66;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  background: rgba(25, 0, 50, 0.93);
+  box-shadow: inset 0 0 12px #5500ff33;
+}
+
+.right-sidebar-div-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.right-sidebar-div-2 p {
+  margin: 0;
+  font-size: 13px;
+  color: #e3c8ff;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Tags Section */
+.widget-tags {
+  margin-top: 60px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(255, 0, 255, 0.3);
+}
+
+.widget-tags h4 {
+  padding: 18px;
+  margin: 0;
+  background: linear-gradient(to right, #9900ff, #4b00cc);
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #ff00ff99;
+  text-shadow: 0 0 5px #ff00ffcc;
+}
+
+.widget-tags-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 16px;
+  background-color: rgba(10, 0, 25, 0.95);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.widget-tags-div p {
+  font-size: 12px;
+  padding: 8px 14px;
+  background: rgba(0, 255, 255, 0.12);
+  color: #00ffff;
+  border: 1px solid #00ffffaa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: inset 0 0 8px #00ffff66;
+  font-weight: 700;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.widget-tags-div p:hover {
+  background-color: rgba(255, 0, 255, 0.4);
+  color: #ffb3ff;
+  box-shadow: 0 0 16px #ff00ff88, 0 0 10px #00ffff88;
+  transform: scale(1.1);
+}
+
+/* Hide sidebar on small screens */
+@media screen and (max-width: 1020px) {
+  .right-sidebar {
+    display: none;
+  }
+}

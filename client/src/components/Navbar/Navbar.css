@@ -1,0 +1,166 @@
+/* Main Navbar Container */
+.main-nav {
+  min-height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: linear-gradient(to right, #1c1a2e, #2b223d);
+  border-bottom: 2px solid #8e44ff;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1), 0 0 15px rgba(140, 50, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Content (Centered within main-nav) */
+.navbar {
+  width: 100%;
+  max-width: 1250px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Navbar Left (Logo and Items) */
+.navbar .navbar-1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo */
+.nav-logo {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Snipster-logo {
+  height: 45px;
+}
+
+/* Navbar Items */
+.nav-item {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffd700;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  text-shadow: 0 0 6px #ffd700aa;
+}
+
+/* Navbar Right (Search and Button Section) */
+.navbar .navbar-2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Search Bar */
+.navbar .navbar-1 form {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.navbar .navbar-1 form input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  font-size: 14px;
+  border: 1px solid #6c5b7b;
+  border-radius: 6px;
+  background-color: #1a1625;
+  color: #f0e6ff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-1 form input::placeholder {
+  color: #a894d8;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.navbar .navbar-1 form input:focus {
+  border-color: #c06c84;
+  box-shadow: 0 0 8px #c06c8480;
+}
+
+/* Search Icon */
+.navbar .navbar-1 form .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffd700;
+  font-size: 16px;
+  pointer-events: none;
+  text-shadow: 0 0 6px #ffd700aa;
+}
+
+/* Nav Links Button Style */
+.nav-links {
+  padding: 8px 16px;
+  border: 2px solid #ffd700;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  color: #0b0b0f;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background: #ffd700;
+  color: #1c1a2e;
+  box-shadow: 0 0 10px #ffd700aa;
+}
+
+/* Toggle icon (for small screens) */
+.slide-in-icon {
+  display: none;
+  transition: 0.2s;
+  padding: 5px 6px 3px 6px;
+  border-radius: 50%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Tweaks */
+@media screen and (max-width: 1120px) {
+  .navbar .navbar-1 form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slide-in-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .navbar .navbar-1 .res-nav {
+    display: none;
+  }
+}

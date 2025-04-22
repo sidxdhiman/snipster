@@ -1,0 +1,138 @@
+/* User details container */
+.user-details-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #1a1a1a; /* Dark background for modern look */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* User details section */
+.user-details {
+  display: flex;
+  align-items: flex-start;
+  color: #e1ecf4; /* Light text for contrast */
+}
+
+/* User name */
+.user-name {
+  padding-left: 20px;
+}
+
+.user-name p {
+  color: #7e7e7e; /* Grey color for user details */
+}
+
+/* Edit profile button */
+.edit-profile-btn {
+  padding: 10px 15px;
+  border: 2px solid #00ff9e; /* Neon green border */
+  border-radius: 8px;
+  background-color: transparent;
+  color: #00ff9e; /* Neon green text */
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #00ff9e;
+  color: #121212; /* Dark text on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Title styles */
+.edit-profile-title {
+  padding: 20px 0px;
+  border-bottom: solid 2px #00ff9e; /* Neon green underline */
+  color: #00ff9e; /* Neon green text */
+}
+
+.edit-profile-title-2 {
+  color: grey;
+  font-weight: 400;
+}
+
+/* Edit profile form */
+.edit-profile-form {
+  padding: 20px;
+  border: 2px solid #444; /* Dark border for form */
+  border-radius: 10px;
+  background-color: #121212; /* Dark background */
+  color: #e1ecf4; /* Light text */
+  margin-top: 20px;
+}
+
+/* Form label and input styling */
+.edit-profile-form label h3 {
+  margin: 0;
+  padding: 5px 0;
+  color: #00ff9e; /* Neon green for label */
+}
+
+.edit-profile-form label p {
+  margin: 0;
+  padding: 5px 0;
+  color: #7e7e7e; /* Light grey for text */
+}
+
+.edit-profile-form label input,
+.edit-profile-form label textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #444; /* Dark border */
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1a1a1a; /* Dark background for inputs */
+  color: #fff; /* White text for inputs */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.edit-profile-form label input:focus,
+.edit-profile-form label textarea:focus {
+  border-color: #00ff9e; /* Neon green focus border */
+  outline: none;
+}
+
+/* Submit button */
+.user-submit-btn {
+  padding: 14px 10px;
+  background-color: #00ff9e; /* Neon green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+  width: 48%; /* Center-align buttons */
+}
+
+.user-submit-btn:hover {
+  background-color: #ef8236; /* Neon orange hover effect */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Cancel button */
+.user-cancel-btn {
+  padding: 14px 10px;
+  color: #00ff9e; /* Neon green text */
+  background-color: transparent;
+  border: 2px solid #00ff9e; /* Neon green border */
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.user-cancel-btn:hover {
+  background-color: #00ff9e; /* Neon green background */
+  color: #121212; /* Dark text on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
